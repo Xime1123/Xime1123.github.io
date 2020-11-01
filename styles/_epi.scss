@@ -1,0 +1,83 @@
+
+.epi{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 30px;
+    height: 1203.5px;
+    
+    &-title{
+        margin-left: 5%;
+        margin-right:46%;
+        padding:0;
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+        font-size: pxtoem(36);
+        letter-spacing: 0;
+        width: 44%;
+    }  
+    &-spotify{
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        margin:5%;
+    }
+ &-SVG {
+        height: 40px;
+        width: 100%;
+        position: relative;
+    
+      }
+&-SVG2 {
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left:0;
+      }
+
+}
+
+@media screen and (min-width: 768px){
+    .epi{
+        max-width: 1440px;
+        position: relative;
+        top:120px;
+        height: 942px;
+   
+       &-title{
+           font-weight: 400; 
+           margin-left: 13.9%;
+           font-size: pxtoem(48) ;   
+   }
+   &-spotify{
+       width: 40%;
+       display:inline-flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       margin: pxtoem(38) ; 
+       position: relative;
+       left: 4.3%; 
+   
+       &-SVG2 {
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        left:0;
+        bottom: 0;
+
+      }
+      &-SVG {
+        height:150px;
+        width: 100%;
+        position: relative;
+    
+      }
+
+   }
+   }
+}

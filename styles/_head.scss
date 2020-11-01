@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header{
+position: relative;
+top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0%;
+    
+    &-title{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: pxtoem(36);
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: 500;
+        width: 100%;
+    }
+    &-span{
+        text-decoration: line-through;
+        display: inline-block;
+       
+    }
+    &-span2{
+        display: block;
+
+    }
+    &-span3{
+        color: blue;
+
+    }
+
+    &-par{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: pxtoem(14);
+        color: #060A24;
+        line-height: pxtoem(22);
+        letter-spacing: 0;
+        width:100%;
+        text-align: justify;
+        height: pxtoem(66);
+        margin-top:pxtoem(16);
+        margin-bottom: pxtoem(36);
+       
+    }
+
+    &-button{
+       color: #060A24;
+       background-color: #00F3BB;
+      font-family:  "IBM Plex Mono", monospace;
+      font-weight: 600;
+       font-size: pxtoem(16);
+       line-height: pxtoem(22);
+       text-align: center;
+       letter-spacing: 0;
+       width: 100%;
+       height: pxtoem(48);
+       text-transform: uppercase;
+       border:none;
+       margin-bottom:pxtoem(24);     
+     &:hover{
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+     }
+    }  
+}
+@media screen and (min-width: 768px){
+ .header{
+     max-width: 1440px;
+     margin-left: 13.9%;
+     position: relative;
+     top:120px;
+
+    &-title{
+        font-size: pxtoem(64);
+        font-weight: 400;
+    
+    }
+    &-button{
+        width: 15.6%;  
+    }
+    &-par{
+        width:  pxtoem(628);
+        font-size: pxtoem(16);
+        
+ }
+ &-span2{
+    display: inline-block;
+    padding-left: 2% ;
+    
+ }
+}
+}

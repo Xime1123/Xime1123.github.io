@@ -1,0 +1,55 @@
+.invit{
+    position: relative;
+    top: 110px;
+  
+    &-title{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: pxtoem(36);
+        color: #060A24;
+        letter-spacing: 0;
+        font-weight: 500;
+        width: 100%;
+        position: relative;
+        top: -125px;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding:0;
+        
+    }
+    &-img-cont{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        top:-100px;
+    
+
+    }
+    &-img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+.invit{    
+    max-width: 1440px;
+    padding: 0%;
+    margin: 0%;
+    border:0%;
+    position: relative;
+    top:550px;
+
+    &-title{
+        font-size: pxtoem(48);
+        font-weight: 400;
+        margin-left: 13.9%;
+    
+    }
+    &-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+           
+    }
+
+}
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    max-width: 1440px;
+  }
+header{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: pxtoem(44);
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 4.4%;
+
+    &-logo{
+        width: 6.6%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: pxtoem(10);
+        position:relative;
+    }
+
+    &-items{
+        width: 100%;
+        height:pxtoem(224);
+        display:none;
+        justify-self: flex-start;
+        position: absolute;
+        top: 44px;
+        left:0;    
+        z-index: 100;
+    }
+    &-item{
+        list-style: none;
+        background: #0000EC;
+        width: 100%;
+        padding: 12px 16px;
+    }
+    &-link{
+        text-decoration: none;
+        color:white;
+        width: 100%;
+        height: pxtoem(22);
+        font-family: "IBM Plex Mono";
+        font-size: pxtoem(16);
+        letter-spacing: 0;
+        line-height: pxtoem(28);
+        margin-top: pxtoem(16);  
+
+    &:hover{
+        color: #00F3BB;
+        text-decoration: line-through;
+    } 
+    &:active{
+        color: rgba(6,10,36,0.56);;
+        text-decoration: line-through;
+
+    }   
+    }
+
+  
+}
+
+#menu{
+    display: none;
+    &:checked ~ .close{
+        display:inline;
+    
+    }
+    &:checked  ~ .display{
+        display: none;
+    } 
+    &:checked ~ .nav-items{
+        display:block;
+    }
+}
+.close{
+    display: none;
+}
+
+label{
+    display:inline-block;
+    width: 5%;
+    height: pxtoem(12);
+    position: absolute;
+    top:pxtoem(16);
+    left:90%;
+
+}
+
+@media screen and (min-width: 768px){
+    .header{
+       grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        max-width: 1440px;
+        
+    }
+    label{
+        display: none;
+    }
+    .nav{
+        position: relative;
+        max-width: 1440px;
+
+    &-logo {
+        width: 10vw;
+        margin-left: 1em;
+        max-width: 6em;
+        position: relative;
+      }
+      
+      &-items {
+        display: inline-block;
+        position: relative;
+        left:50%;
+        top:-50px;
+        max-width: 1440px;
+       
+      }
+      &-item {
+        display: inline-block;
+        width: 10%;
+        background-color: white;
+        font-size: pxtoem(16);
+      }
+      &-link{
+          color: black;
+      }
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Podcasts</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/393182d3a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo" class="nav-logo">
+
+        <nav class="nav">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="display"><i class="fas fa-bars"></i> </label>
+            <label for="menu" class="close"><i class="fas fa-times"></i> </label>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#episode" class="nav-link">Episodios</a></li>
+                <li class="nav-item"><a href="#article" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#invit" class="nav-link">Entrevistas</a></li>
+                <li class="nav-item"><a href="#topic" class="nav-link">Tópicos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="header">
+            <h1 class="header-title">Hello <span class="header-span">world</span><span class="header-span2" > pale blue
+                dot <span class="header-span3">.</span></span></h1>
+            <p class="header-par">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
+                episodios, todos los jueves cada 15 días.</p>
+            <button class="header-button">Conocé más</button>
+        </section>
+        <a name="episode"></a>
+        <section class="epi">
+            <svg class="epi-SVG" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,0 100,0 0,100" />
+            </svg>
+            <h3 class="epi-title">Episodios</h3>
+            <div class="epi-spotify">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%"
+                    height="232"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="epi-spotify">
+                <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%"
+                    height="232"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="epi-spotify">
+                <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%"
+                    height="232"  allow="encrypted-media"></iframe>
+            </div>
+            <div class="epi-spotify">
+                <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
+                    height="232"  allow="encrypted-media"></iframe>
+            </div>
+            <svg class="epi-SVG2" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,100, 100,0  100,100" />
+            </svg>
+        </section>
+        <a name="article"></a>
+        <article class="art">
+            <img class="art-img" src="images/phone.png" alt="women in coding">
+            <h2 class="art-title"> De dónde venimos </h2>
+            <p class="art-par">
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+                Universe, are challenged by this point of pale light. <br /><br />
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+            </p>
+        </article>
+        <a name="invit"></a>
+        <section class="invit" >
+            <h2 class="invit-title">Invitadas/os estelares</h2>
+            <div class="invit-img">
+                <div class="invit-img-cont"> <img src="./images/grace-hopper.png" alt="grace-hopper" class="invit-img">
+                </div>
+                <div class="invit-img-cont"> <img src="./images/Katie-Bouman.png" alt="katie-bouman" class="invit-img">
+                </div>
+                <div class="invit-img-cont"> <img src="./images/Margaret_Hamilton.png" alt="Margaret-hamilton"
+                        class="invit-img"></div>
+                <div class="invit-img-cont"> <img src="images/Univac1103computer.png" alt="Computer-1950"
+                        class="invit-img"></div>
+                <div class="invit-img-cont"> <img src="images/Computes-operators.png"
+                        alt="computer-first-programmable-purpose" class="invit-img"></div>
+                <div class="invit-img-cont"> <img src="./images/susan-kare.png" alt="susan-kare" class="invit-img">
+                </div>
+            </div>
+        </section>
+        <a name="topic"></a>
+        <section class="topic">
+            <h2 class="topic-title">Algunos de nuestros temas </h2>
+            <div class="topic-cont">
+                <div class="topic-img"><img src="./images/icon1.svg" alt="trabajo remoto" class="topic-icon">
+                    <p class="topic-par">Trabajo remoto</p>
+                </div>
+
+                <div class="topic-img"><img src="./images/icon2.svg" alt="repensando" class="topic-icon">
+                    <p class="topic-par">Repensando la programación </p>
+                </div>
+                <div class="topic-img"><img src="./images/icon3.svg" alt="bases" class="topic-icon">
+                    <p class="topic-par">Bases del código</p>
+                </div>
+
+                <div class="topic-img"><img src="./images/icon4.svg" alt="seguridad" class="topic-icon">
+                    <p class="topic-par">Seguridad informática</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="nov">
+            <svg class="nov-SVG" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,0 100,0 0,100" />
+            </svg>
+            <h1 class="nov-title">¿Querés las últimas novedades? </h1>
+            <button class="nov-button">Escuchá los episodios </button>
+        </section>
+    </main>
+    <footer class=foot>
+        <p class="foot-par">© 2019— Hello blue pale dot</p>
+        <div class="foot-redes">
+            <div class="foot-cont"><a class="foot-link" href="https://www.spotify.com/"><i class="fab fa-spotify"></i></a
+                ></div>
+            <div class="foot-cont"><a class="foot-link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a
+                ></div>
+            <div class="foot-cont"><a class="foot-link" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a
+                ></div>
+            <div class="foot-cont"><a class="foot-link" href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a
+                ></div>
+            <div class="foot-cont"><a class="foot-link" href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a></div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
